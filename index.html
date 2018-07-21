@@ -1,0 +1,91 @@
+<script language="JavaScript">
+<!-- Begin hide from old browsers
+window.onerror = null
+var browserOK = (((navigator.appName == 'Netscape') &&
+                  (parseInt(navigator.appVersion) >= 3)) ||
+		 ((navigator.appName == 'Microsoft Internet Explorer') &&
+		  (parseInt(navigator.appVersion) >= 4)));
+
+
+if (browserOK)
+{
+    Message = "welcome!";
+    Chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 ";
+    Chars += "`~!@#$%^&*()-_=+[{]}\\|;:'\",<.>/?";
+    Base = 0;
+    Length = 0;
+    LastString = "";
+    while (Base < Message.length)
+    {
+      LastString += Chars.charAt(Random(95));
+      Base ++;
+    }
+    window.status = LastString;
+}
+    
+function Random(Range)
+{
+  Temp = Math.random() * Range;
+  Temp2 = Temp;
+  Step = 1;
+  while (Step < Range)
+  {
+    Step *= 10;
+  }
+  while (Step >= 1)
+  {
+    while (Temp2 >= Step)
+	{
+	  Temp2 -= Step;
+	}
+	Step /= 10;
+  }
+  return Temp - Temp2;
+}
+
+
+function marquee()
+{
+  if (browserOK)
+  {
+    Length ++;
+    if (Length >= 200 || LastString == Message)
+    {
+      window.setTimeout('marquee()', 8000);
+      window.status = Message;
+      Base = 0;
+      Length = 0;
+      LastString = "";
+      while (Base < Message.length)
+      {
+        LastString += Chars.charAt(Random(95));
+        Base ++;
+      }
+    }
+    else
+    {
+      Base = 0;
+      TempString = "";
+      while (Base < Message.length)
+      {
+        if (Message.charAt(Base) != LastString.charAt(Base))
+	{
+	  TempString += Chars.charAt(Random(95));
+	}
+        else
+	{
+	  TempString += Message.charAt(Base);
+	}
+	Base ++;
+      }
+      LastString = TempString;
+      window.status = TempString;
+      window.setTimeout('marquee()', 50);
+    }
+  }
+}
+
+window.setTimeout('marquee()', 100);
+
+// End hide -->
+</script>
