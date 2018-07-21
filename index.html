@@ -1,3 +1,4 @@
+<p id="test"><p>
 <script language="JavaScript">
 <!-- Begin hide from old browsers
 window.onerror = null
@@ -79,7 +80,7 @@ function marquee()
 	Base ++;
       }
       LastString = TempString;
-      window.status = TempString;
+      document.getElementById("test").innerHTML = TempString;
       window.setTimeout('marquee()', 50);
     }
   }
