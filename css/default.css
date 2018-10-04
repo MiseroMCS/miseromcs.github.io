@@ -1,4 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Atomic+Age');
 
+.header_text {
+    font-family: 'Atomic Age', cursive;
+    font-size: 50pt;
+}
+
+.small_header {
+    font-size: 24pt;
+}
 
 body {
     font-family: 'Terminal', monospace;
