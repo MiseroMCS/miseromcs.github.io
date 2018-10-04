@@ -1,0 +1,38 @@
+
+
+body {
+    font-family: 'Terminal', monospace;
+    font-size: 0.9vw;
+    background-color: black;
+    color: green;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: green;
+    color: black;
+    cursor: pointer;
+}
+
+.invisible {
+    display: none;
+}
+
+.accordion label:hover {
+    background-color: green;
+    color: black;
+    cursor: pointer;
+}
+
+.accordion p {
+    border-style: dotted;
+    width: 60vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}

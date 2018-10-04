@@ -1,0 +1,23 @@
+#signals a {
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+#message_dialog {
+    margin-top: 5vh;
+}
+
+.msg {
+    border-style: solid;
+    margin-bottom: 5vh;
+}
+
+.msg {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.msg .body {
+    padding-left: 5em;
+    width: 75em;
+}
