@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Atomic+Age');
 
 .header_text {
+    padding-top: 1.5vh;
     font-family: 'Atomic Age', cursive;
     font-size: 50pt;
 }
@@ -11,9 +12,14 @@
 
 body {
     font-family: 'Terminal', monospace;
-    font-size: 12pt;
+    font-size: 8pt;
     background-color: black;
     color: green;
+    line-height: 1.5ch;
+}
+
+br {
+    margin-top: 5px;
 }
 
 a {
@@ -37,7 +43,7 @@ a:hover{
     cursor: pointer;
 }
 
-.accordion p {
+.accordion .contents {
     border-style: dotted;
     width: 60vw;
     padding-top: 1vh;
